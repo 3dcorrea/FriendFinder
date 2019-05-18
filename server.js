@@ -1,31 +1,14 @@
-var express = require("express");
 var path = require("path");
-var route = express.Router();
+var express = require("express");
+var app = express();
 
 
-route.get('/', (req, res)); {
-    res.send('/ being hit');
-}
+var PORT = process.env.PORT || 8080;
+
+var route = require("./app/routing/apiRoutes.js")
+app.use(route);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-module.exports = route;
+app.listen(PORT, function () {
+    console.log("Server listening on: http://localhost:" + PORT);
+});
