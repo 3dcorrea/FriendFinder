@@ -1,4 +1,4 @@
-var results=[{
+var results = [{
     "name": "Bro",
     "photo": "",
     "scores": [
@@ -35,6 +35,15 @@ var results=[{
         7,
         3,
         8,
-        
-    ]    
-}]
+        7,
+        9,
+        1,
+        2,
+        4,
+        3,
+        5,
+    ]
+}];
+
+
+  

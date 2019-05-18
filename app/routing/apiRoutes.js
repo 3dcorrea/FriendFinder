@@ -1,12 +1,21 @@
+module.exports = function (app) {
+    
+    app.get("/api/friends", function (req, res) {
+        //show friends as JSON
+    });
+    app.post("/api/friends", function (req, res) {
+        // receive friends
+        
 
 
-var route = express.Router();
+    });
 
 
 
-route.get('/', function (req, res) {
-    res.send('../public/home.html')
-})
 
 
-module.exports = route;
+
+
+};
+
+
