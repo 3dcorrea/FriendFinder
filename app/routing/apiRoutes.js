@@ -1,5 +1,5 @@
 module.exports = function (app) {
-    
+
     app.get("/api/friends", function (req, res) {
         //show friends as JSON
         require("results");
@@ -11,5 +11,3 @@ module.exports = function (app) {
     });
 
 };
-
-

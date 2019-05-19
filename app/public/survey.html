@@ -20,7 +20,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="scripts/survey.js"></script>
         <br>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" id="submit" class="btn btn-primary">Submit</button>
     </body>
 
     <script>
@@ -54,14 +54,15 @@
                 $("#questions").append(qElem, qSelect);
             });
 
-
-            $('.btn btn-primary').on("click", function () {
+            $('#submit').on("click", function () {
                 $("#questions").parseInt(qSelect);
-                
+                // on submit: takes answers to questions, converts to integers
+                require("results");
+                // require results variable from friends.js
+                var score = Math.abs(qSelect - results.scores);
+                // gets absolute values from answers
+
             });
-
-
-          
         });
     </script>
 </body>
