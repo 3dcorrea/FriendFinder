@@ -53,6 +53,10 @@
                 qElem.text(question);
                 $("#questions").append(qElem, qSelect);
             });
+
+            $("form").submit(function () {
+                alert("Submitted");
+            });
         });
     </script>
 </body>

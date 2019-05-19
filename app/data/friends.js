@@ -1,6 +1,6 @@
 var results = [{
-    "name": "Bro",
-    "photo": "",
+    "name": "Madara Uchiha",
+    "photo": "app/public/photos/Madara.png",
     "scores": [
         5,
         1,
@@ -14,8 +14,8 @@ var results = [{
         1
     ],
 
-    "name": "Sasuke Uchiha",
-    "photo": "",
+    "name": "Ichigo Kurosaki",
+    "photo": "app/public/photos/Ichigo.JPG",
     "scores": [
         1,
         4,
@@ -30,7 +30,7 @@ var results = [{
     ],
 
     "name": "Might Guy",
-    "photo": "",
+    "photo": "app/public/photos/Guy.jpg",
     "scores": [
         7,
         3,
@@ -45,7 +45,7 @@ var results = [{
     ],
 
     "name": "Naruto Uzumaki",
-    "photo": "",
+    "photo": "app/public/photos/naruto.jpg",
     "scores": [
         5,
         5,
