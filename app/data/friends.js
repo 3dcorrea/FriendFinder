@@ -42,8 +42,10 @@ var results = [{
         4,
         3,
         5,
-    ]
+    ],
 }];
 
-
+function difference(a, b) {
+    return Math.abs(a - b);
+  }
   
