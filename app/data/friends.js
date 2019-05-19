@@ -14,7 +14,7 @@ var results = [{
         1
     ],
 
-    "name": "Dude",
+    "name": "Sasuke Uchiha",
     "photo": "",
     "scores": [
         1,
@@ -29,7 +29,7 @@ var results = [{
         4,
     ],
 
-    "name": "Guy",
+    "name": "Might Guy",
     "photo": "",
     "scores": [
         7,
@@ -43,7 +43,23 @@ var results = [{
         3,
         5,
     ],
+
+    "name": "Naruto Uzumaki",
+    "photo": "",
+    "scores": [
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        1,
+        1,
+        3,
+        3,
+    ]
 }];
+
 
 function difference(a, b) {
     return Math.abs(a - b);

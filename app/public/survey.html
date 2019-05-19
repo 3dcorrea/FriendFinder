@@ -11,108 +11,47 @@
 </head>
 
 <body>
-    <form class="form-inline">
-        <label class="questions" for="inlineFormCustomSelectPref">Question 1: Belonging to a collective or having autonomy, which most appeals to you? </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
 
-        <label class="questions" for="inlineFormCustomSelectPref">Question 2: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
+    <body>
+        <h1>Survey</h1>
+        <div id="questions">
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
 
-        <label class="questions" for="inlineFormCustomSelectPref">Question 3: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <script>
+        $(document).ready(function () {
+            var questions = [
+                "You enjoy vibrant social events with lots of people.",
+                "You often spend time exploring unrealistic yet intriguing ideas.",
+                "Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.",
+                "You often think about what you should have said in a conversation long after it has taken place.",
+                "If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.",
+                "People can rarely upset you.",
+                "You have a careful and methodical approach to life.",
+                "You are still bothered by the mistakes you made a long time ago.",
+                "At parties and similar events you can mostly be found farther away from the action.",
+                "You often find it difficult to relate to people who let their emotions guide them."
+            ];
+            $.each(questions, function (index, question) {
+                var qElem = $("<h2>");
+                var qSelect = $("<select>")
+                    .addClass("custom-select my-1 mr-sm-2 friend-answers");
+                qSelect.html(`
             <option selected>Choose</option>
             <option value="1">1- Strongly Agree</option>
             <option value="2">2- Somewhat Agree</option>
             <option value="3">3- Neutral</option>
             <option value="4">4- Somewhat Disagree</option>
             <option value="5">5- Strongly Disagree</option>
-        </select>
+      `);
 
-        <label class="questions" for="inlineFormCustomSelectPref">Question 4: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 5: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 6: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 7: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 8: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 9: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-
-        <label class="questions" for="inlineFormCustomSelectPref">Question 10: </label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose</option>
-            <option value="1">1- Strongly Agree</option>
-            <option value="2">2- Somewhat Agree</option>
-            <option value="3">3- Neutral</option>
-            <option value="4">4- Somewhat Disagree</option>
-            <option value="5">5- Strongly Disagree</option>
-        </select>
-        <button type="submit" class="btn btn-primary my-1">Submit</button>
-    </form>
+                qElem.text(question);
+                $("#questions").append(qElem, qSelect);
+            });
+        });
+    </script>
 </body>
 
 </html>
